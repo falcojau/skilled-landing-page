@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+
+  --color-indigo-custom: #666CA3;
+  --color-dark-navy: #13183F;
+  --color-muted-grey: #83869A;
+  --color-hot-pink: #F74780;
+  --color-soft-pink: #FFA7C3;
+
+  --spacing-section-sm: 1rem;
+  --spacing-section-md: 3rem;
+  --spacing-section-lg: 5rem;
+}
+
+/* Gradientes personalizados */
+@utility bg-gradient-white-sky {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(240, 241, 255, 1) 100%);
+}
+
+@utility bg-gradient-pink-orange {
+  background-image: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+}
+
+@utility bg-gradient-pink-blue {
+  background-image: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+/* Botones personalizados */
+@utility btn-dark-navy {
+  padding: 1rem;
+  @apply bg-dark-navy text-white font-bold rounded-full hover:opacity-70 focus:ring-2;
+}
+
+@utility btn-pink-orange {
+  padding: 1rem;
+  @apply bg-gradient-pink-orange text-white font-bold rounded-full hover:opacity-70 focus:ring-2;
+}
+
+@utility btn-pink-blue {
+  padding: 1rem;
+  @apply bg-gradient-pink-blue text-white font-bold rounded-full hover:opacity-70 focus:ring-2;
+}
+
+/* Personalización de títulos y subtítulos */
+@utility title-h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  @apply text-dark-navy;
+}
+
+@utility subtitle-p {
+  font-size: 1.1rem;
+  @apply text-muted-grey;
+}
+
+@utility title-h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@utility cards-courses {
+  background-color: white;
+  padding: 2em;
+  border-radius: 2em;
+  position: relative;
+}
